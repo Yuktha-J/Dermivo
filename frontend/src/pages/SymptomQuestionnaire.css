@@ -1,0 +1,466 @@
+.symptom-page {
+  min-height: 100vh;
+  background: #f7faf9;
+  color: #183b38;
+  font-family: inherit;
+}
+
+.symptom-navbar {
+  height: 78px;
+  padding: 0 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border-bottom: 1px solid #e7efec;
+}
+
+.symptom-navbar .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #173e39;
+  font-size: 23px;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.symptom-navbar .logo-icon {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  color: white;
+  background: #16877b;
+  border-radius: 11px;
+}
+
+.symptom-back-button,
+.questionnaire-secondary-button {
+  padding: 11px 17px;
+  border: 1px solid #d7e5e1;
+  border-radius: 9px;
+  background: white;
+  color: #315b55;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.symptom-back-button:hover,
+.questionnaire-secondary-button:hover {
+  background: #edf6f3;
+}
+
+.symptom-main {
+  width: min(780px, 90%);
+  margin: 0 auto;
+  padding: 65px 0 80px;
+}
+
+.symptom-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.symptom-heading .section-label {
+  color: #16877b;
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: 2px;
+}
+
+.symptom-heading h1 {
+  margin: 15px 0 12px;
+  color: #173e39;
+  font-size: clamp(30px, 5vw, 43px);
+  letter-spacing: -1.5px;
+}
+
+.symptom-heading p {
+  max-width: 570px;
+  margin: 0 auto;
+  color: #71827e;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.progress-section {
+  margin-bottom: 22px;
+}
+
+.progress-labels {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+  color: #71827e;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.progress-track {
+  height: 6px;
+  overflow: hidden;
+  background: #e3ece9;
+  border-radius: 20px;
+}
+
+.progress-fill {
+  width: 66.66%;
+  height: 100%;
+  background: #16877b;
+  border-radius: 20px;
+}
+
+.selected-image-note {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 15px 18px;
+  margin-bottom: 22px;
+  background: #edf7f3;
+  border: 1px solid #d8ebe3;
+  border-radius: 12px;
+}
+
+.selected-image-icon {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  color: white;
+  background: #16877b;
+  border-radius: 50%;
+}
+
+.selected-image-note strong {
+  display: block;
+  font-size: 13px;
+}
+
+.selected-image-note p {
+  margin: 4px 0 0;
+  color: #71827e;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.symptom-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.question-section {
+  padding: 27px;
+  background: #ffffff;
+  border: 1px solid #e5eeeb;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(28, 74, 65, 0.035);
+}
+
+.question-section-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 25px;
+}
+
+.question-section-heading > span {
+  width: 35px;
+  height: 35px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  color: #16877b;
+  background: #eaf5f1;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 750;
+}
+
+.question-section-heading h2 {
+  margin: 2px 0 5px;
+  color: #183b38;
+  font-size: 19px;
+}
+
+.question-section-heading p {
+  margin: 0;
+  color: #82918d;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.form-field {
+  margin-top: 22px;
+}
+
+.form-field > label {
+  display: block;
+  margin-bottom: 10px;
+  color: #31534e;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.form-field input[type="number"],
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #dce7e3;
+  border-radius: 9px;
+  outline: none;
+  background: #ffffff;
+  color: #244741;
+  font-family: inherit;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  border-color: #16877b;
+  box-shadow: 0 0 0 3px rgba(22, 135, 123, 0.09);
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: #a0ada9;
+}
+
+.form-field textarea {
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.choice-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.choice-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 15px;
+  border: 1px solid #dce7e3;
+  border-radius: 9px;
+  color: #526d67;
+  background: #ffffff;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.choice-option:has(input:checked) {
+  border-color: #16877b;
+  color: #126d63;
+  background: #edf7f3;
+}
+
+.choice-option input {
+  accent-color: #16877b;
+}
+
+.questionnaire-note {
+  padding: 19px 21px;
+  margin-top: 3px;
+  background: #fff9ed;
+  border: 1px solid #f0e5c9;
+  border-radius: 12px;
+}
+
+.questionnaire-note strong {
+  color: #745b29;
+  font-size: 13px;
+}
+
+.questionnaire-note p {
+  margin: 8px 0 0;
+  color: #827653;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.questionnaire-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 5px;
+}
+
+.questionnaire-submit-button {
+  padding: 13px 21px;
+  border: none;
+  border-radius: 9px;
+  color: #ffffff;
+  background: #16877b;
+  font-size: 14px;
+  font-weight: 650;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.questionnaire-submit-button:hover {
+  background: #116f65;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 600px) {
+  .symptom-navbar {
+    height: 68px;
+    padding: 0 5%;
+  }
+
+  .symptom-main {
+    width: 92%;
+    padding: 45px 0 55px;
+  }
+
+  .symptom-heading h1 {
+    font-size: 31px;
+  }
+
+  .question-section {
+    padding: 21px 17px;
+  }
+
+  .questionnaire-actions {
+    flex-direction: column-reverse;
+  }
+
+  .questionnaire-actions button {
+    width: 100%;
+  }
+
+  .symptom-back-button {
+    padding: 9px 11px;
+    font-size: 12px;
+  }
+}
+
+/* =========================================
+   DERMIVO REVIEW PAGE - DESIGN IMPROVEMENTS
+========================================= */
+
+/* Uploaded image and symptom review sections */
+.review-card {
+  background: #ffffff;
+  border: 1px solid #e3ece9;
+  border-radius: 18px;
+  padding: 28px;
+  margin-top: 24px;
+  box-shadow: 0 5px 20px rgba(20, 65, 58, 0.04);
+}
+
+/* Section headings */
+.review-card h2 {
+  color: #173f39;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 18px;
+}
+
+/* Uploaded image */
+.review-image {
+  display: block;
+  width: 100%;
+  max-width: 560px;
+  max-height: 380px;
+  object-fit: contain;
+  object-position: center;
+  background: #f3f8f6;
+  border: 1px solid #e1ebe7;
+  border-radius: 14px;
+  margin: 12px 0;
+}
+
+/* Uploaded image filename */
+.review-file-name {
+  display: block;
+  color: #647b76;
+  font-size: 14px;
+  margin-top: 10px;
+  overflow-wrap: anywhere;
+}
+
+/* List containing questionnaire answers */
+.review-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 12px;
+  border: 1px solid #e6eeeb;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Individual answer row */
+.review-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 17px 20px;
+  background: #ffffff;
+  border-bottom: 1px solid #edf2f0;
+}
+
+/* Remove border from final row */
+.review-row:last-child {
+  border-bottom: none;
+}
+
+/* Answer labels */
+.review-row span {
+  color: #637a75;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* Answer values */
+.review-row strong {
+  color: #173f39;
+  font-size: 15px;
+  font-weight: 650;
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+
+/* Review page progress bar */
+.review-progress-fill {
+  width: 100%;
+  background: #168c80;
+}
+
+/* Responsive styling for mobile screens */
+@media (max-width: 600px) {
+  .review-card {
+    padding: 18px;
+    border-radius: 14px;
+  }
+
+  .review-card h2 {
+    font-size: 21px;
+  }
+
+  .review-image {
+    max-height: 280px;
+  }
+
+  .review-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    padding: 14px;
+  }
+
+  .review-row strong {
+    text-align: left;
+  }
+}
